@@ -1,0 +1,280 @@
+body {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1;
+    margin: 0;
+    min-width: 960px;
+    padding: 0;
+}
+
+div {
+    display: block;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+
+#header {
+    margin: 0 auto;
+    padding: 44px 0 50px;
+    text-align: center;
+    width: 960px;
+}
+
+#header ul {
+    margin: 0;
+    padding: 56px 0 0;
+}
+
+
+
+#header ul li {
+    display: inline;
+    list-style: none;
+    margin: 0;
+    padding: 0 19px;
+}
+
+
+#header ul li.selected a {
+    color: #0ba39c;
+}
+
+#header ul li a {
+    color: #252525;
+    display: inline-block;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0 0 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#header a.logo {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 340px;
+}
+
+#header a.logo img {
+    border: 0;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#body {
+    margin: 0;
+    padding: 0 0 30px;
+    text-align: center;
+}
+
+#body h1 {
+    color: #fff;
+    display: inline;
+    font-family: poller_oneregular;
+    font-size: 35px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+#body h1 span {
+    background: #252525;
+    display: inline-block;
+    padding: 15px 28px 12px;
+}
+
+#body > div {
+    margin: 0 auto;
+    padding: 0;
+    width: 960px;
+}
+
+#body div ul {
+    margin: 0;
+    padding: 24px 10px 0;
+    width: 940px;
+}
+
+#body div ul li {
+    border: 2px solid #1a1a1a;
+    display: block;
+    list-style: none;
+    margin: 0 0 13px;
+    overflow: hidden;
+    padding: 0;
+}
+
+#body div ul li .figure {
+    border-right: 2px solid #1a1a1a;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 376px
+}
+
+#body div ul li img {
+    border: 0;
+    display: block;
+    margin: 0;
+    padding: 0;
+    opacity: 0.8;
+    transition: 0.5s ease-in-out;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#body div ul li div {
+    float: left;
+    margin: 0;
+    padding: 63px 0 20px;
+    width: 558px;
+}
+
+#body div ul li div h3 {
+    color: #252525;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+#body div ul li div p {
+    padding: 30px 30px 18px;
+}
+
+#body div ul li div a.more {
+    background: #000;
+    color: #fff;
+    display: inline-block;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0;
+    padding: 8px 28px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 568px) {
+    body{
+        min-width:568px;
+    }
+    
+    #header {
+        padding: 20px 0;
+        position: relative;
+        width: 100%;
+    }
+    #header a.logo {
+        width: 80%;
+    }
+    #header ul {
+        border: 1px solid #fff;
+        display: none;
+        left: 50%;
+        margin-left: -45%;
+        padding: 0;
+        position: absolute;
+        width: 90%;
+        z-index: 1001;
+    }
+    #header ul li {
+        border-top: 1px solid #fff;
+        display: block;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+    #header ul li a {
+        background: rgba(11, 163, 156, 0.9);
+        color: #fff;
+        display: block;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+        height: 49px;
+        line-height: 49px;
+        padding: 0 15px;
+        text-align: left;
+    }
+    #body {
+        width: 100%;
+    }
+    #body h1 {
+        display: block;
+        font-size: 20px;
+        margin: 0 auto;
+        width: 90%;
+    }
+    #body h1 span {
+        display: block;
+        padding: 3%;
+        width: 94%;
+    }
+    #body > div {
+        padding: 0 5%;
+        width: 90%;
+    }
+    #body div ul {
+        margin: 0;
+        padding: 20px 0 0;
+        width: 100%;
+    }
+    #body div ul li {
+        overflow: visible;
+        padding: 0 0 20px;
+        width: 99%;
+    }
+    #body div ul li .figure {
+        border: 0;
+        display: block;
+        float: none;
+        margin: 0 0 20px;
+        width: 100%;
+    }#body div ul li .figure img {
+        width: 100%;
+    }
+    #body div ul li div {
+        float: none;
+        padding: 0;
+        width: 100%;
+    }
